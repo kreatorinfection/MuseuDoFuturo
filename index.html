@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Museu do Futuro — Porta-Banana</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f1e7;
+            color: #222;
+            line-height: 1.5;
+        }
+
+        nav {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        header span {
+            color: #e7bd35;
+        }
+
+        header p {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        main {
+            max-width: 850px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        .artefato {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .artefato img {
+            width: 300px;
+        }
+
+        .dados {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .dado {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+
+        .teorias {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .teoria {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+
+        .destaque {
+            background: #292929;
+            color: white;
+            padding: 25px;
+        }
+
+        .destaque h2 {
+            color: #e7bd35;
+        }
+
+        .evidencia {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .citacao {
+            background: #e8dfc3;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background: #333;
+            color: white;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 35px;
+            }
+
+            .artefato {
+                display: block;
+            }
+
+            .artefato img {
+                display: block;
+                width: 250px;
+                max-width: 100%;
+                margin: 0 auto 20px;
+            }
+
+            .teorias,
+            .dados {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#artefato">Artefato</a>
+        <a href="#teorias">Teorias</a>
+        <a href="#evidencias">Evidências</a>
+    </nav>
+
+    <header>
+        <h1>O Mistério do <span>Porta-Banana</span></h1>
+
+        <p>
+            Um objeto comum do século XXI que pode esconder
+            uma história muito mais estranha do que imaginávamos.
+        </p>
+    </header>
+
+    <main>
+
+        <section id="artefato">
+            <h2>O artefato</h2>
+
+            <div class="artefato">
+                <img
+                    src="https://acdn-us.mitiendanube.com/stores/004/858/688/products/prd004757_d1-3a84183be674c7b36417876359289084-1024-1024.webp"
+                    alt="Porta-banana"
+                >
+
+                <div>
+                    <h3>Porta-Banana Individual</h3>
+
+                    <p>
+                        O objeto foi encontrado em um antigo estabelecimento
+                        brasileiro e inicialmente foi identificado como um
+                        simples recipiente para bananas.
+                    </p>
+
+                    <p>
+                        Porém, seu formato chamou a atenção dos arqueólogos.
+                    </p>
+
+                    <strong>
+                        E se ele fosse uma bainha?
+                    </strong>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Dados do objeto</h2>
+
+            <div class="dados">
+                <div class="dado">
+                    <strong>Material:</strong> plástico rígido
+                </div>
+
+                <div class="dado">
+                    <strong>Capacidade:</strong> 1 banana
+                </div>
+
+                <div class="dado">
+                    <strong>Período:</strong> 2010–2035
+                </div>
+
+                <div class="dado">
+                    <strong>Uso:</strong> transporte de bananas
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>A descoberta</h2>
+
+            <p>
+                O porta-banana foi encontrado em 2197 durante uma
+                escavação nas ruínas de um antigo centro comercial.
+            </p>
+
+            <p>
+                Junto dele havia uma banana parcialmente fossilizada,
+                uma garrafa de água, um celular sem bateria e outro
+                porta-banana.
+            </p>
+
+            <div class="citacao">
+                <strong>
+                    "Se era apenas uma fruta, por que alguém precisava de uma bainha?"
+                </strong>
+
+                <p>— Instituto de Arqueologia Doméstica, 2198</p>
+            </div>
+        </section>
+
+        <section id="teorias">
+            <h2>Teorias</h2>
+
+            <div class="teorias">
+
+                <div class="teoria">
+                    <h3>Recipiente</h3>
+
+                    <p>
+                        Servia apenas para proteger bananas durante o transporte.
+                    </p>
+                </div>
+
+                <div class="teoria">
+                    <h3>Bainha</h3>
+
+                    <p>
+                        Poderia ser uma bainha para a chamada espada-banana.
+                    </p>
+                </div>
+
+                <div class="teoria">
+                    <h3>Arma cerimonial</h3>
+
+                    <p>
+                        A banana poderia ser usada em cerimônias.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="destaque">
+
+                <h2>A Espada-Banana</h2>
+
+                <p>
+                    Alguns pesquisadores acreditam que os humanos do século XXI
+                    utilizavam bananas como armas.
+                </p>
+
+                <p>
+                    A banana ficaria protegida dentro do porta-banana
+                    até o momento do combate.
+                </p>
+
+                <strong>
+                    A teoria nunca foi comprovada.
+                </strong>
+
+            </div>
+        </section>
+
+        <section id="evidencias">
+            <h2>Evidências</h2>
+
+            <div class="evidencia">
+                <strong>Formato curvo</strong>
+                <p>A banana possui formato parecido com uma espada.</p>
+            </div>
+
+            <div class="evidencia">
+                <strong>Formato do porta-banana</strong>
+                <p>O objeto lembra uma pequena bainha.</p>
+            </div>
+
+            <div class="evidencia">
+                <strong>Transporte</strong>
+                <p>Bananas eram carregadas dentro de mochilas e bolsas.</p>
+            </div>
+
+            <div class="evidencia">
+                <strong>Registros digitais</strong>
+                <p>Existem imagens de pessoas segurando bananas.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Frases do século XXI</h2>
+
+            <table>
+                <tr>
+                    <th>Frase</th>
+                    <th>Interpretação</th>
+                </tr>
+
+                <tr>
+                    <td>"Vou levar uma banana"</td>
+                    <td>Preparação para combate</td>
+                </tr>
+
+                <tr>
+                    <td>"Minha banana"</td>
+                    <td>Posse de armamento</td>
+                </tr>
+
+                <tr>
+                    <td>"Descasca aí"</td>
+                    <td>Ativação da arma</td>
+                </tr>
+
+                <tr>
+                    <td>"Tá na mochila"</td>
+                    <td>Arma armazenada</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Mistérios</h2>
+
+            <div class="dados">
+
+                <div class="dado">
+                    Por que apenas uma banana?
+                </div>
+
+                <div class="dado">
+                    Existiam mestres da banana?
+                </div>
+
+                <div class="dado">
+                    Por que a arma era comestível?
+                </div>
+
+                <div class="dado">
+                    Quem venceu a Guerra das Bananas?
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Museu de Arqueologia Digital<br>
+        Arquivo PB-2026-001 • Ano 2200
+    </footer>
+
+</body>
+</html>
